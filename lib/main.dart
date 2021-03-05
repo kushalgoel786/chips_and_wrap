@@ -20,7 +20,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   List<Widget> chips = [
     Container(width: double.infinity),
-    Chip(label: Text('Kushal')),
+    Chip(label: Text('Chip')),
   ];
 
   @override
@@ -41,9 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            chips.add(Chip(label: Text('Kushala')));
+            chips.add(Chip(label: Text('New Chip')));
           });
         },
+        child: Icon(Icons.add),
       ),
     );
   }
